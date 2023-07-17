@@ -1,20 +1,14 @@
 
-/* style instructions for all headers */
+/* HEADERS */
 
+/* grouped class for headers */
 h1, h2, h3 {
   font-family: 'Courier New', Courier, monospace;
   font-weight: thick;
 }
 
+/* header 1 */
 h1 {
-  font-size: 30px;
-}
-
-h2 {
-  padding: 25px, 0px;
-}
-
-header h1 {
   background-color: #efe5dc;
   color: #fff
   text-align: left;
@@ -23,24 +17,41 @@ header h1 {
   font-size: 42px;
 }
 
-/* style instructions for the paragraphs */
-
-section p {
-  padding: 0px 250px;
+/* header 2 */
+h2 {
+  padding: 25px, 0px;
 }
 
-p, ol, ul {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-/* padding for the about me */
+/* PARAGRAPHS */
 
+/* background color for entire about me section */
 article {
   background-color: #efe5dc;
   padding: 15px 15px;
 }
 
-/* style instructions for the footer */
+/* paragraph padding */
+section p {
+  padding: 0px 250px;
+}
+
+/* font for paragraphs + lists */
+p, ol, ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* pseudo element for open and closed quotation marks */
+.quotationmark::before {
+  content: open-quote;
+}
+
+.quotationmark::after {
+  content: close-quote;
+}
+
+
+/* FOOTER */
 
 footer {
   background-color: #fbfefb;
@@ -49,7 +60,19 @@ footer {
   
 }
 
-/* style instructions for the profile picture */
+/* LINKS */
+
+/* font and font size */
+a {
+  font-family: 'Courier New', Courier, monospaces;
+  font-size: 16px
+}
+
+/* styling for links */
+a:link {color: blue;}
+a:clicked{color: purple;}
+
+/* IMAGE */
 
 img {
   border-radius: 50%;
@@ -58,10 +81,11 @@ img {
 }
 
 
-/* class that centers any text */
+/* SPECIFIC CLASSES */
+
+/* specific class for centering texts */
 
 .center {
   text-align: center;
-  
 }
 
